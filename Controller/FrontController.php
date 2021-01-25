@@ -31,9 +31,9 @@ class FrontController {
     // METHODE QUI RENVOIE SUR LA PAGE D'ACCUEIL AVEC LE DERNIER CHAPITRE
 
 	public function home() {
-		$posts = $this->post->lastPost() ;
+		$lastPosts = $this->post->lastPost() ;
 		return $this->view->renderFront('Home', [				
-			'posts' => $posts
+			'lastPosts' => $lastPosts
 		]) ;
 	}
 }
