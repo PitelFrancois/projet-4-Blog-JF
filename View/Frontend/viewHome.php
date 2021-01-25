@@ -18,13 +18,13 @@
 		<p><span class="bold">Vous pouvez consulter le dernier chapitre juste en dessous.</span></p>
 	</div>
 
-	<?php foreach ($posts as $post): ?>
+	<?php foreach ($lastPosts as $lastPost): ?>
 		<div class="post">
     		<div>
-    			<h2><?= $post['title'] ?></h2>
-    			<h3><em>Publié le <?= $post['date_fr'] ?></em></h3>
-    			<p><?= nl2br(substr($post['content'], 0, 500) . '...') ?></p>
-    			<a href="index.php?url=post&chapter=<?= $post['chapitre'] ?>"><button>Lire la suite</button></a>
+    			<h2><?= $lastPost['title'] ?></h2>
+    			<h3><em>Publié le <?= $lastPost['date_fr'] ?></em></h3>
+    			<p><?= nl2br(substr($lastPost['content'], 0, 500) . '...') ?></p>
+    			<a href="index.php?url=post&chapter=<?= $lastPost['chapitre'] ?>"><button>Lire la suite</button></a>
     		</div>
     	</div>
 	<?php endforeach ; ?>
