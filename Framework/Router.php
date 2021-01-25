@@ -24,6 +24,20 @@ class Router {
 
 					$frontController->home() ;
 
+				} elseif ($_GET['url'] == 'post') {
+
+					$countPublishPost = $frontController->countPublishPost() ;
+					
+					if (isset($_GET['chapter']) && $_GET['chapter'] <= $countPublishPost) {
+
+                		$frontController->post($_GET['chapter']) ;
+            
+                    } else {
+
+                    	$errorController->page404() ;
+
+                    }
+
 				} 
 
 			}  else {
