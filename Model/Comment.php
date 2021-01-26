@@ -19,4 +19,10 @@ class Comment extends Database {
         $comments = $this->executeRequest($sql, [$chapterId]);
         return $comments ;
     }
+
+    public function addComment($chapterId, $author, $comment) {
+    	$sql = ('INSERT INTO comments(post_id, Author, content, date) VALUES(?, ?, ?, NOW())') ;
+    	$comments = $this->executeRequest($sql,array($chapterId,$author, $comment)) ;
+        return $comments ;	
+    }
 }
