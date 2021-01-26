@@ -66,6 +66,18 @@ class Router {
                     
                     }
                 
+                }  elseif ($_GET['url'] == 'signalComment') {
+                        
+                    if (isset($_GET['commentId']) && $_GET['commentId'] > 0) {
+                            
+                        $backController->signalComment($_GET['commentId'],$_GET['chapterId']) ;
+                        
+                    } else {
+                            
+                    	$errorController->signalCommentNotId($_GET['chapterId']) ;
+                            
+                    }
+                    
                 }
 
 			}  else {

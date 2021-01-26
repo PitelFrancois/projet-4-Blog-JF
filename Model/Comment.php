@@ -25,4 +25,9 @@ class Comment extends Database {
     	$comments = $this->executeRequest($sql,array($chapterId,$author, $comment)) ;
         return $comments ;	
     }
+
+    public function signalComment($commentId) {
+        $sql = 'UPDATE comments SET signalComment = ? WHERE id = ?' ;
+        $signalcomments = $this->executeRequest($sql, [1, $commentId]) ;
+    }
 }

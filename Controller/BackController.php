@@ -41,4 +41,17 @@ class BackController {
         </div>') ;
         header('Location: index.php?url=post&chapter=' . $chapterId ) ;
     }
+
+    public function signalComment($commentId,$chapterId) {
+        
+        $this->comment->signalComment($commentId,$chapterId) ;
+        $this->session->set('signal_comment', 
+        '<div id=session>
+            <div id="session2">
+                <a id="cross"><i class="fas fa-times-circle"></i></a>
+                <p class="sessionP">Le commentaire a été signalé.</p>
+            </div>
+        </div>') ;
+        header('Location: index.php?url=post&chapter=' . $chapterId ) ;
+    }
 }
