@@ -40,7 +40,11 @@ class Router {
 
                     }
 
-                } elseif ($_GET['url'] == 'about') {
+                } elseif ($_GET['url'] == 'contact') {
+					
+					$frontController->contact() ;
+
+				} elseif ($_GET['url'] == 'about') {
 					
 					$frontController->about() ;
 
@@ -67,7 +71,7 @@ class Router {
                     
                     }
                 
-                }  elseif ($_GET['url'] == 'signalComment') {
+                } elseif ($_GET['url'] == 'signalComment') {
                         
                     if (isset($_GET['commentId']) && $_GET['commentId'] > 0) {
                             
@@ -77,6 +81,18 @@ class Router {
                             
                     	$errorController->signalCommentNotId($_GET['chapterId']) ;
                             
+                    }
+                    
+                } elseif ($_GET['url'] == 'addMessage') {
+
+                    if (!empty($_POST['pseudo']) && !empty($_POST['message']) && !empty($_POST['mail'])) {
+                            
+                        $backController->addMessage($_POST['pseudo'], $_POST['message'], $_POST['mail']) ;
+                        
+                    } else {
+                            
+                        $errorController->messageFieldsNotFilled() ;
+                        
                     }
                     
                 }

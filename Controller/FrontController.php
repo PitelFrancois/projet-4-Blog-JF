@@ -62,5 +62,11 @@ class FrontController {
 	public function about() {
 		return $this->view->renderFront('About') ;
 	}
+
+	// METHODE QUI RENVOIE SUR LA PAGE CONTACT
+
+	public function contact() {
+		return $this->view->renderFront('Contact') ;
+	}
 	
 }
