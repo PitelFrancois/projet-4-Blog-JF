@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^index.php$ View/Frontend/index.php  [L]
+DirectoryIndex View/Frontend/index.php 
+#AllowOverride FileInfo
+ErrorDocument 404 http://localhost/P4/View/Frontend/view404.php
