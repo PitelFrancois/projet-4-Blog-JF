@@ -56,4 +56,11 @@ class FrontController {
 			'countPublishPost' => $countPublishPost
 		]) ;
 	}
+
+	// METHODE QUI RENVOIE SUR LA PAGE JEAN FORTEROCHE
+
+	public function about() {
+		return $this->view->renderFront('About') ;
+	}
+	
 }
