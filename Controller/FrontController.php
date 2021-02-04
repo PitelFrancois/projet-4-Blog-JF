@@ -4,13 +4,6 @@
 
 namespace Francois\Projet\Controller ;
 
-// REQUIRE
-
-require_once 'Model/Post.php' ;
-require_once 'Framework/View.php' ;
-require_once "Framework/Session.php" ;
-require_once 'Model/Comment.php' ;
-
 // USE
 
 use Francois\Projet\Model\Post ;

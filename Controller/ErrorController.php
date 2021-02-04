@@ -4,11 +4,6 @@
 
 namespace Francois\Projet\Controller ;
 
-// REQUIRE
-
-require_once 'Framework/View.php' ;
-require_once "Framework/Session.php" ;
-
 // USE
 
 use Francois\Projet\Framework\View ;

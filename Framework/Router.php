@@ -2,10 +2,6 @@
 
 namespace Francois\Projet\Framework ;
 
-require_once 'Controller/FrontController.php' ;
-require_once 'Controller/ErrorController.php' ;
-require_once 'Controller/BackController.php' ;
-
 use \Francois\Projet\Controller\FrontController ;
 use \Francois\Projet\Controller\ErrorController ;
 use \Francois\Projet\Controller\BackController ;

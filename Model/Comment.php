@@ -4,10 +4,6 @@
 
 namespace Francois\projet\Model ;
 
-// REQUIRE
-
-require_once('Model/Database.php') ;
-
 // USE
 
 use \Francois\projet\Model\Database ;

@@ -4,11 +4,6 @@
 
 namespace Francois\Projet\Controller ;
 
-// REQUIRE
-
-require_once 'Model/Comment.php' ;
-require_once "Framework/Session.php" ;
-
 // USE
 
 use Francois\Projet\Model\Comment ;

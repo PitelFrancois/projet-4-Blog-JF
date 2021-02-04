@@ -2,8 +2,6 @@
 
 namespace Francois\Projet\Framework ;
 
-require_once "Framework/Session.php" ;
-
 use \Francois\Projet\Framework\Session ;
 
 class View {
