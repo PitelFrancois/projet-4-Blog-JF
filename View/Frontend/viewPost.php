@@ -51,7 +51,7 @@
             <input type="text" id="author" name="author" />
             <label for="comment">Commentaire</label><br />
             <textarea id="comment" name="comment"></textarea>
-            <input id="button" type="submit" />
+            <input id="button2" type="submit" />
         </form>
     </div>
 </div>

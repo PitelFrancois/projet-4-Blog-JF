@@ -13,12 +13,11 @@
     <div class="site-pusher">
             <div class="site-content">
                 <?= $content ?>
-                <?php require_once 'footer.php' ; ?>
             </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="Public/JS/cross.js"></script>
-    <script src="Public/JS/menu.js"></script>
-    <script src="Public/JS/closeSessionWindow.js"></script>
+    <script type="text/javascript" src="Public/JS/cross.js"></script>
+    <script type="text/javascript" src="Public/JS/menu.js"></script>
+    <script type="text/javascript" src="Public/JS/closeSessionWindow.js"></script>
 </body>
 </html>

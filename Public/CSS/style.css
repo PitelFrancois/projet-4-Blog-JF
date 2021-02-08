@@ -1,0 +1,929 @@
+@font-face {
+	font-family: 'Raleway' ;
+	src: url('../font/Raleway-Regular.ttf') ;
+}
+html, body {
+	height: 100% ;
+}
+.site-pusher,.site-content {
+	height: 100% ;
+}
+body {
+	margin: 0px ;
+	padding: 0px ;
+	font-family: sans-serif ;
+}
+ul {
+	margin: 0px ;
+	padding: 0px ;
+}
+li {
+	list-style: none ;
+}
+a {
+	text-decoration: none ;
+}
+
+/*****************************************************/
+/*                     HEADER                        */
+/*****************************************************/
+
+header {
+	position: fixed ;
+	width: 100% ;
+	height: 80px ;
+	line-height: 80px ;
+	top: 0px ;
+	left: 0px ;
+	right: 0px ;
+	background-color: rgba(27,55,112,1) ;
+	z-index: 100 ;
+}
+#menu ul {
+	display: flex ;
+}
+#menu ul:first-child {
+	margin-left: 40px ;
+} 
+#menu a{
+	color: white ;
+	text-transform: uppercase ;
+	padding: 15px ;
+	border-bottom: 1px solid transparent ;
+	cursor: pointer ;
+}
+#menu a:hover {
+	border-bottom: 1px solid white ;
+}
+.fa-feather-alt {
+	margin-right: 5px ;
+}
+#icon {
+	display: none ;
+}
+
+/*****************************************************/
+/*                   HOME PAGE                       */
+/*****************************************************/
+.home {
+	margin-top: 80px ;
+}
+.home #imgHome {
+	width: 100% ;
+	height: 100% ;
+	max-height: 900px ;
+}
+.home .accroche {
+	position: relative ;
+	width: 100% ;
+	font-family: 'Raleway' ;
+	margin: auto ;
+}
+.home .accrocheText {
+	position: absolute ;
+	top: 25% ;
+	left: 0px ;
+	right: 0px ;
+	color: white ;
+	text-align: center ;
+}
+.home .accrocheText h1 {
+	text-transform: uppercase ;
+	letter-spacing: 0.2em ;
+}
+.home .accrocheText span {
+	display: block ;
+	letter-spacing: 1.4em ;
+	margin-left: 3% ;
+}
+.home .accrocheText h2 {
+	font-size: 1.8em ;
+	font-style: italic ;
+}
+.homeContent1 {
+	width: 80% ;
+	padding-bottom: 1% ;
+	margin: auto ;
+	margin-top: 60px ;
+	text-align: center ;
+}
+.homeContent1 .bold {
+	font-weight: bold ;
+}
+.post {
+	width: 60% ;
+	margin: auto ;
+	line-height: 2em ;
+	margin-top: 60px ;
+	box-shadow: 5px 5px rgba(27,55,112,1) ;
+	margin-bottom: 60px ;
+}
+.post div {
+	padding: 5% ;
+	box-shadow: -5px -5px rgba(27,55,112,0.6) ;
+}
+.post a {
+	margin-top: 20px ;
+	width: auto ;
+	height: auto ;
+	padding: 10px 15px ;
+	text-transform: uppercase ; 
+	border: 2px solid rgba(27,55,112,1) ;
+	border-radius: 30px ;
+	background-color: white ;
+	color: rgba(27,55,112,1) ;
+	cursor: pointer ;
+}
+.post a:hover {
+	color: rgba(37,68,169,1) ; 
+	background-color: white ;
+}
+
+/*****************************************************/
+/*                      POST                         */
+/*****************************************************/
+
+.postSolo {
+	width: 60% ;
+	padding: 5% ;
+	margin: auto ;
+	line-height: 2em ;
+	margin-top: 60px ;
+}
+.controlChapter {
+	height: 40px ;
+	line-height: 40px ;
+	width: 100% ;
+	position: relative ;
+}
+.previewChapter {
+	position: absolute ;
+	display: flex ;
+	flex-direction: row ;
+	left: 0px ;
+}
+.fa-caret-square-left {
+	font-weight: bold ;
+	font-size: 1.4em ;
+	margin-right: 5px ;
+	margin-top: 9px ;
+	color: rgba(27,55,112,1) ;
+}
+.previewChapter p {
+	margin: 0px ;
+	font-style: italic ;
+}
+
+.nextChapter {
+	position: absolute ;
+	display: flex ;
+	flex-direction: row ;
+	right: 0px ;
+}
+.fa-caret-square-right {
+	font-weight: bold ;
+	font-size: 1.4em ;
+	margin-left: 6px ;
+	margin-top: 9px ;
+	color: rgba(27,55,112,1) ;
+}
+.nextChapter p {
+	margin: 0px ;
+	font-style: italic ;
+}
+.formComment {
+	width: 60% ;
+	margin: auto ;
+	display: flex ;
+	flex-direction: row ;
+	justify-content: space-around ;
+}
+.formComment .textComment {
+	width: 50% ;
+	height: 400px ; 
+	padding: 5% ;
+	background-color: rgba(37,68,129,1) ;
+	color: white ;
+	border-top: 2px solid rgba(37,68,169,1) ;
+	border-bottom: 2px solid rgba(37,68,169,1) ;
+	border-left: 2px solid rgba(37,68,169,1) ;
+}
+.formComment .form {
+	height: 400px ;
+	width: 50% ;
+	padding: 5% ;
+	border-top: 2px solid rgba(37,68,169,1) ;
+	border-bottom: 2px solid rgba(37,68,169,1) ;
+	border-right: 2px solid rgba(37,68,169,1) ;
+}
+.formComment .form form {
+	display: flex ;
+	flex-direction: column ;
+	justify-content: space-around ;
+}
+.formComment .form label {
+	text-align: center ;
+	text-transform: uppercase ;
+	color: rgba(37,68,169,1) ;
+	margin-top: 16px ;
+}
+.formComment .form input {
+	height: 36px ; 
+	border: 1px solid rgba(37,68,169,1) ;
+}
+.formComment .form textarea {
+	min-height: 180px ;
+}
+.formComment .form a {
+	padding-top: 26px ;
+}
+.formComment .form #button2 {
+	width: 100% ;
+	height: 36px ;
+	text-transform: uppercase ;
+	background-color: rgba(37,68,129,1) ;
+	color: white ;
+	border: none ;
+	cursor: pointer ;
+	margin-top: 20px ;
+}
+.comments {
+	width: 60% ;
+	margin: auto ;
+}
+.comments h2 {
+	text-align: center ;
+	margin: 60px ;
+}
+.comments em {
+	color: rgba(185,188,198,1) ;
+}
+.comments .box {
+	margin-bottom: 40px ;
+	box-shadow: -5px -5px rgba(27,55,112,0.6) ;
+}
+.comments .box2 {
+	padding: 5% ;
+	box-shadow: 5px 5px rgba(27,55,112,1) ;
+}
+.comments button {
+	width: 120px ;
+	height: 36px ;
+	padding: 5px ;
+	text-transform: uppercase ;
+	background-color: rgba(37,68,129,1) ;
+	color: white ;
+	border: none ;
+	cursor: pointer ;
+}
+
+/*****************************************************/
+/*                      POST                         */
+/*****************************************************/
+
+.posts {
+	margin-top: 110px ;
+}
+
+.posts .post {
+	margin-bottom: 20px ;
+}
+
+/*****************************************************/
+/*                      ABOUT                        */
+/*****************************************************/
+
+#about {
+	width: 90% ;
+	margin: auto ;
+	margin-top: 100px ;
+	margin-bottom: 20px ;
+	box-shadow: 5px 5px rgba(27,55,112,1) ;
+}
+.about2 {
+	display: flex ;
+}
+
+.about2 img {
+	width: 300px ;
+}
+.about3 {
+	display: block ;
+	padding: 2% ;
+}
+.about{
+	padding: 5% ;
+	box-shadow: -5px -5px rgba(27,55,112,0.6) ;
+}
+.about1 {
+	padding-top: 80px ;
+}
+.about h1 {
+	text-transform: uppercase ;
+	text-align: center ;
+	margin-bottom: 60px ;
+}
+.booksH2 {
+	text-align: center ;
+}
+.books h2 {
+	text-transform: uppercase ;
+	margin-top: 60px ;
+	margin-bottom: 60px ;
+}
+.book1,.book2 {
+	display: flex ;
+	background-color: rgba(228,240,245,1) ;
+	margin-bottom: 40px ;
+}
+.book1 img,.book2 img {
+	width: 300px ;
+}
+.description {
+	padding: 5% ;
+}
+
+/*****************************************************/
+/*                    CONTACT                        */
+/*****************************************************/
+.contact {
+	width: 100% ;
+	height: 100% ;
+	background-color: rgba(230,246,255,1) ;
+	margin-top: 80px ;
+}
+.enTete {
+	text-align: center ;
+	padding-top: 20px ;
+}
+.enTete h2 {
+	text-transform: uppercase ;
+}
+.contact form {
+	display: flex ;
+	flex-direction: column ;
+	width: 100% ;
+	margin: auto ;
+}
+.contact label {
+	text-align: center ;
+	text-transform: uppercase ;
+	margin: 15px ;
+}
+.contact form #pseudo2 {
+	width: 400px ;
+	height: 30px ;
+	margin: auto ;
+}
+.contact form #mail {
+	width: 400px ;
+	height: 30px ;
+	margin: auto ;
+}
+.contact form #message {
+	width: 60% ;
+	min-height: 300px ;
+	margin: auto ;
+	margin-bottom: 40px ;
+}
+.contact form #button3 {
+	height: 30px ;
+	width: 200px ;
+	margin: auto ;
+	border: 1px solid transparent ;
+	text-transform: uppercase ;
+	background-color: rgba(27,55,112,1) ;
+	color: white ;
+	cursor: pointer ;
+}
+
+/*****************************************************/
+/*                   CONNEXION                       */
+/*****************************************************/
+.connexion {
+	height: 100% ;
+}
+.connexion form {
+	display: flex ;
+	flex-direction: column ;
+	background-color: rgba(230,246,255,1) ;
+	width: 60% ;
+	padding: 2% ;
+	margin: auto ;
+}
+.connexion label {
+	text-align: center ;
+	text-transform: uppercase ;
+	margin: 15px ;
+}
+.connexion form #pseudo {
+	width: 400px ;
+	height: 30px ;
+	margin: auto ;
+}
+.connexion form #password {
+	width: 400px ;
+	height: 30px ;
+	margin: auto ;
+}
+.connexion form #button {
+	height: 30px ;
+	width: 200px ;
+	margin: auto ;
+	border: 1px solid transparent ;
+	text-transform: uppercase ;
+	background-color: rgba(27,55,112,1) ;
+	color: white ;
+	cursor: pointer ;
+	margin-top: 30px ;
+}
+
+/*****************************************************/
+/*                   DASHBOARD                       */
+/*****************************************************/
+
+.dashboard{
+	width: 100% ;
+	margin-top: 80px ;
+	height: 100% ;
+}
+.blockDashboard {
+	width: 100% ;
+	height: auto ;
+	background-color: white ;
+	display: flex ;
+	flex-direction: column ;
+}
+.validateComment, .postPublish, .mailRead {
+	background: linear-gradient(to bottom left,#4218B8, #00C0FF) ;
+}
+.signalComment, .postNotPublish, .mailNoRead {
+	background: linear-gradient(to bottom right, #4218B8,#00FFA9) ;
+}
+.publishComment, .newPost {
+	background: linear-gradient(to top right, #00FFA9, #00C0FF) ;
+}
+.count {
+	position: absolute ;
+	width: 80px ;
+	height: 80px ;
+	bottom: 20px ;
+	left: 0px ;
+	right: 0px ;
+	font-size: 2em ;
+	border: 2px solid white ;
+	border-radius: 80px ;
+	line-height: 80px ;
+	margin: auto ;
+	color: white ;
+}
+.thead {
+	width: 100% ;
+	height: 40px ;
+	display: flex ;
+	text-align: center ;
+	text-transform: uppercase ;
+}
+.thead p {
+	margin: 0px ;
+	color: white ;
+	font-weight: bold ;
+}
+.pseudo,.contenus,.date,.actions,.titre,.chapitre,.email {
+	min-height: 40px ;
+	line-height: 25px ;
+	border-right: 1px solid black ;
+}
+.tbody {
+	width: 100% ;
+	min-height: 40px ;
+	display: flex ;
+	text-align: center ;
+}
+.tbody p {
+	margin: 4px 0px ;
+	height: auto ;
+}
+.pseudo,.contenus,.date,.actions,.chapitre, .titre,.email {
+	color: black ;
+	border-right: 1px solid rgba(220,220,220,1) ;
+}
+.tbody .actions {
+	border-right: none ;
+}
+.fa-check-circle {
+	margin-top: 14px ;
+	font-size: 1.4em ;
+}
+.fa-trash-alt {
+	margin-top: 14px ;
+	font-size: 1.4em ;
+	color: rgba(229,17,17,1) ;
+}
+.fa-cart-arrow-down,.fa-edit  {
+	margin-top: 14px ;
+	font-size: 1.4em ;
+	color: rgba(0,62,255,1) ;
+}
+.fas.fa-circle {
+	margin-top: 14px ;
+	font-size: 1.4em ;
+	color: rgba(0,233,102,1) ;
+	margin-right: 15px ;
+}
+.fa-circle.cercle2 {
+	margin-top: 14px ;
+	font-size: 1.4em ;
+	color: rgba(220,220,220,1) ;
+	margin-right: 15px ;
+}
+
+/*                   Commentaires                    */
+
+.commentInfo {
+	height: 200px ;
+	display: flex ;
+	justify-content: center ;
+	margin-top: 40px ;
+	margin-bottom: 10px ;
+}
+.validateComment,.signalComment,.publishComment {
+	width: 320px  ;
+	height: 100% ;
+	margin: 0px 40px ;
+	border-radius: 14px ;
+	text-transform: uppercase ;
+	text-align: center ;
+	line-height: 24px ;
+	font-weight: bold ;
+	position: relative ;
+	color: white ;
+}
+.commentValidationTable,.signalCommentTable, .publishCommentTable {
+	width: 90% ;
+	margin: auto ;
+	margin-bottom: 40px ;
+}
+.commentValidationTable h2, .signalCommentTable h2, .publishCommentTable h2 {
+	text-align: center ;
+	text-transform: uppercase ;
+}
+.thead1 {
+	background: linear-gradient(to bottom left,#00C0FF,#4218B8) ;
+}
+.thead2 {
+	background: linear-gradient(to bottom right, #4218B8,#00FFA9) ;
+}
+.thead3 {
+	background: linear-gradient(to top right, #00C0FF, #00FFA9) ;
+}
+.theadComment .pseudo {
+	width: 10% ;
+	line-height: 40px ;
+}
+.theadComment .chapitre {
+	width: 2% ;
+	line-height: 40px ;
+}
+.theadComment .contenus {
+	width: 58% ;
+	line-height: 40px ;
+}
+.theadComment .date {
+	width: 15% ;
+	line-height: 40px ;
+	min-width: 82px ;
+}
+.theadComment .actions {
+	width: 15% ;
+	line-height: 40px ;
+}
+.tbody {
+	border-bottom: 1px solid rgba(220,220,220,1) ;
+}
+.tbody1 .pseudo {
+	width: 10% ;
+	line-height: 40px ;
+}
+.tbody1 .chapitre {
+	width: 2% ;
+	line-height: 40px ;
+}
+.tbody1 .contenus {
+	width: 58% ;
+	line-height: 40px ;
+}
+.tbody1 .date {
+	width: 15% ;
+	min-width: 82px ;
+	line-height: 40px ;
+}
+.tbody1 .actions {
+	width: 15% ;
+	line-height: 40px ;
+}
+
+/*                   Chapitres                    */
+
+.postInfo {
+	height: 200px ;
+	display: flex ;
+	justify-content: center ;
+	margin-top: 40px ;
+	margin-bottom: 10px ;
+}
+.postPublish,.postNotPublish,.newPost {
+	width: 320px  ;
+	height: 90% ;
+	margin: 0px 40px ;
+	border-radius: 14px ;
+	text-transform: uppercase ;
+	text-align: center ;
+	line-height: 24px ;
+	font-weight: bold ;
+	position: relative ;
+	color: white ;
+}
+.postPublishTable,.postNotPublishTable {
+	width: 90% ;
+	margin: auto ;
+	margin-bottom: 40px ;
+}
+.postPublishTable h2, .postNotPublishTable h2 {
+	text-align: center ;
+	text-transform: uppercase ;
+}
+.theadPost .chapitre {
+	width: 5% ;
+	line-height: 40px ;
+}
+.theadPost .titre {
+	width: 11% ;
+	min-width: 162px ;
+	padding: 0px 2%  ;
+	line-height: 40px ;
+}
+.theadPost .contenus {
+	width: 51% ;
+	padding: 0px 2%  ;
+	line-height: 40px ;
+}
+.theadPost .date {
+	width: 10% ;
+	min-width: 82px ;
+	line-height: 40px ;
+}
+.theadPost .actions {
+	width: 15% ;
+	line-height: 40px ;
+}
+.tbody2 .chapitre {
+	width: 5% ;
+	line-height: 40px ;
+}
+.tbody2 .titre {
+	width: 11% ;
+	min-width: 162px ;
+	padding: 0px 2%  ;
+}
+.tbody2 .contenus {
+	width: 51% ;
+	padding: 0px 2%  ;
+}
+.tbody2 .date {
+	width: 10% ;
+	min-width: 82px ;
+	line-height: 40px ;
+}
+.tbody2 .actions {
+	width: 15% ;
+	line-height: 40px ;
+}
+
+/*                   Mails                    */
+
+.mailInfo {
+	height: 200px ;
+	display: flex ;
+	justify-content: center ;
+	margin-top: 40px ;
+	margin-bottom: 10px ;
+}
+.mailRead,.mailNoRead {
+	width: 320px  ;
+	height: 90% ;
+	margin: 0px 40px ;
+	border-radius: 14px ;
+	text-transform: uppercase ;
+	text-align: center ;
+	line-height: 24px ;
+	font-weight: bold ;
+	position: relative ;
+	color: white ;
+}
+.mailReadTable,.mailNotReadTable {
+	width: 90% ;
+	margin: auto ;
+	margin-bottom: 40px ;
+}
+.mailReadTable h2, .mailNotReadTable h2 {
+	text-align: center ;
+	text-transform: uppercase ;
+}
+.theadMail .pseudo {
+	width: 15% ;
+}
+.theadMail .contenus {
+	width: 50% ;
+}
+.theadMail .date {
+	width: 15% ;
+	min-width: 82px ;
+}
+.theadMail .email {
+	width: 20% ;
+	min-width: 210px ;
+}
+.theadMail .actions {
+	width: 10% ;
+}
+.tbody3 .actions {
+	width: 10% ;
+}
+.tbody3 .email {
+	width: 20% ;
+	min-width: 210px ;
+}
+.tbody3 .date {
+	width: 15% ;
+	min-width: 82px ;
+}
+.tbody3 .contenus {
+	width: 50% ;
+}
+.tbody3 .pseudo {
+	width: 15% ;
+}
+
+/*****************************************************/
+/*                   ADD POST                        */
+/*****************************************************/
+
+.dashboardEdit {
+	width: 96% ;
+	margin-top: 80px ;
+	height: 100% ;
+	background-color: rgba(240,240,240,1) ;
+	padding: 2% ;
+}
+.edit {
+	padding: 2% ;
+}
+.edit form,.f1 {
+	display: flex ;
+	flex-direction: column ;
+	width: 70% ;
+	margin: auto ;
+	padding: 2% ;
+	background-color: white ;
+	min-height: 700px ;
+}
+.edit label {
+	text-transform: uppercase ;
+	text-align: center ;
+	margin: 20px 0px ;
+	font-weight: bold ;
+	color: rgba(27,55,112,1) ;
+}
+.edit input {
+	width: 300px ;
+	height: 30px ;
+	margin: auto ;
+}
+.edit textarea {
+	width: 90% ;
+	margin: auto ;
+	min-height: 300px ;
+}
+.edit #button {
+	margin-top: 40px ;
+	border: none ;
+	text-transform: uppercase ;
+	color: white ;
+	background-color: rgba(27,55,112,1) ;
+	height: auto ;
+	padding: 15px ;
+	cursor: pointer ;
+}
+
+
+/*****************************************************/
+/*                     FOOTER                        */
+/*****************************************************/
+
+footer {
+	width: 100% ;
+	height: 60px ;
+	line-height: 60px ;
+	background-color: rgba(27,55,112,1) ;
+	z-index: 100 ;
+	display: flex ;
+	justify-content: center ;
+}
+footer p {
+	margin: 0px ;
+	color: white ;
+	text-align: center ;
+}
+
+.fa-instagram,.fa-twitter,.fa-facebook-f {
+	color: white ;
+	font-size: 1.2em ;
+	margin-left: 10px ;
+}
+
+/*****************************************************/
+/*                   PAGE 404                        */
+/*****************************************************/
+
+.page404 {
+	margin-top: 80px ;
+	text-align: center ;
+	height: 100% ;
+}
+.page404 h1{
+	
+	text-align: center ;
+	padding-top: 40px ; 
+}
+
+/*****************************************************/
+/*                     POP-UP                        */
+/*****************************************************/
+
+#session {
+	width: 20% ;
+	height: auto ;
+	position: fixed ;
+	top: 120px ;
+	right: 30px ;
+  	padding: 1rem ;
+  	background: linear-gradient(to right, #74E780, #74C7E7) ;
+  	padding: 3px;
+  	text-align: center ;
+  	z-index: 101 ;
+}
+#session2 {
+	padding: 2rem;
+	background-color: white ;
+	position: relative ;
+}
+.fa-times-circle {
+	position: absolute ;
+	top: -14px ;
+	right: -14px ;
+	color: white ;
+	font-size: 1.6em ;
+	color: red ;
+	background-color: white ;
+	border-radius: 20px ;
+	cursor: pointer ;
+}
+.windowConnect {
+	z-index: 150 ;
+	width: 100% ;
+	background-color: rgba(27,55,112,0.8) ;
+	display: flex ;
+	flex-direction: row ;
+	justify-content: space-between ;
+	display: none ;
+}
+.windowConnect form {
+	margin-left: 40px ;
+}
+.windowConnect label {
+	color: white ;
+	text-transform: uppercase ;
+	margin: 5px ;
+	font-size: 0.8em ;
+}
+#menu .windowConnect a {
+	padding: 0px ;
+	border-bottom: none ;
+}
+.cross {
+	margin-top: 4px ;
+	margin-right: 40px ;
+}
+.fas.fa-times {
+	font-size: 1.4em ;
+}
+.windowConnect form #button {
+	text-transform: uppercase ;
+	background-color: white ;
+	border: none ;
+	border-radius: 0px ;
+	padding: 5px ;
+	margin-left: 10px ;
+	cursor: pointer ;
+}

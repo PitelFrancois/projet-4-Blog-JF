@@ -10,7 +10,7 @@ abstract class Database {
 
 	private static $db ;
 
-    // Méthode qui permet de différencier la requête à effectuer
+    // METHODE QUI PERMET DE DIFFERENCIER LA REQUETE A EFFECTUER
 
     protected function executeRequest ($sql, $params = null) {
         
@@ -23,7 +23,7 @@ abstract class Database {
 		return $result ;
     }
 
-    // Méthode qui permet de se connecter à la bdd
+    // METHODE QUI PERMET DE SE CONNECTER A LA BDD
 
 	private static function getDb() {
         

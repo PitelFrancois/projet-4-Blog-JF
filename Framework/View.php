@@ -15,20 +15,20 @@ class View {
 	}
 
 	public function renderFront($template, $data = []) {
-		$this->file = 'View/Frontend/view' . $template . '.php' ;
+		$this->file = '../../View/Frontend/view' . $template . '.php' ;
 		$content = $this->renderFile($this->file, $data) ;
-		$view = $this->renderFile('View/Frontend/viewFrontTemplate.php', [
+		$view = $this->renderFile('../../View/Frontend/viewFrontTemplate.php', [
 				'title' => $this->title,
 				'content' => $content,
-				'session' => $this->session
+				'session' => $this->session  
 		]) ;
 	echo $view ;
 	}
 
 	public function renderBack($template, $data = []) {
-		$this->file = 'View/Backend/view' . $template . '.php' ;
+		$this->file = '../../View/Backend/view' . $template . '.php' ;
 		$content = $this->renderFile($this->file, $data) ;
-		$view = $this->renderFile('View/Backend/viewBackTemplate.php', [
+		$view = $this->renderFile('../../View/Backend/viewBackTemplate.php', [
 				'title' => $this->title,
 				'content' => $content,
 				'session' => $this->session  

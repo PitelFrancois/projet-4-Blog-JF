@@ -1,0 +1,429 @@
+@media screen and (max-width: 768px) {
+	html, body {
+		height: 100% ;
+	}
+	.site-pusher {
+		transition-duration: 0.3s ;
+		transform: translateY(0px) ;
+		height: 100% ;
+	}
+	.site-content {
+		height: 100% ;
+		display: flex ;
+		flex-direction: column ;
+		justify-content: space-between; ;
+	}
+
+	/*****************************************************/
+	/*                     HEADER                        */
+	/*****************************************************/
+	#header {
+		height: 70px ;
+		transition-duration: 0.3s ;
+	}
+	#menu ul:first-child {
+		margin-left: 0px ;
+	}
+	#icon {
+		display: block ;
+		width: 70px ;
+		height: 70px ;
+		position: relative ;
+		cursor: pointer ;
+		float: right ;
+	}
+	.fas.fa-bars {
+		position: absolute ;
+		top: 20px ;
+		right: 24px ;
+		display: block ;
+		font-size: 1.6em ;
+		color: white ;
+	}
+	#menu {
+		position: absolute ;
+		height: 204px ;
+		left: 0px ;
+		top: 0px ;
+		bottom: 0px ;
+		background-color: rgba(27,55,112,1) ;
+		width: 100% ;
+		transform: translateY(-204px) ;
+		transition-duration: 0.3s ;
+		z-index: 80 ;
+		text-align: right ;
+	}
+	.width--sidebar #menu {
+		transform: translateY(-204px) ;
+	}
+	.width--sidebar #header {
+		transform: translateY(204px) ;
+	}
+	#menu ul {
+		display: flex ;
+		flex-direction: column ;
+	}
+	#menu a:hover {
+		border-bottom: 1px solid transparent ;
+	}
+	#menu li {
+		display: block ;
+		height: 40px ;
+		line-height: 40px ;
+		border-bottom: 1px solid white ;
+	}
+	.width--sidebar .site-pusher {
+		transform: translateY(204px) ;
+	}
+
+	/*****************************************************/
+	/*                   HOME PAGE                       */
+	/*****************************************************/
+	.home { 
+		margin-top: 69px ;
+	}
+	.post {
+		width: 80% ;
+	}
+	.accrocheText h1 {
+		font-size: 1.2em ;
+	}
+	.home .accrocheText h2 {
+		font-size: 1.2em ;
+	}
+
+	/*****************************************************/
+	/*                      POST                         */
+	/*****************************************************/
+
+	.postSolo {
+		width: 90% ;
+	}
+	.formComment {
+		width: 90% ;
+		flex-direction: column ;
+	}
+	.comments {
+		width: 90% ;
+		margin-top: 40px ;
+	}
+	.formComment .textComment {
+		width: 90% ;
+		height: 200px ;
+	}
+	.formComment .form {
+		width: 90% ;
+		height: 370px ;
+		border: none ;
+	}
+	.form #author {
+		width: 90% ;
+		margin: auto ;
+	}
+	.comments h2 {
+		margin-top: 0px ;
+	}
+	.formComment .form textarea {
+		width: 90% ;
+		margin: auto ;
+	}
+	.formComment .form #button2 {
+		width: 90% ;
+		margin: auto ;
+		margin-top: 40px ;
+	}
+
+	/*****************************************************/
+	/*                      ABOUT                        */
+	/*****************************************************/
+	.about1 h2 {
+		text-align: center ;
+	}
+	.about2 {
+		flex-direction: column ;
+	} 
+	.about2 img {
+		width: 200px ;
+		margin: auto ;
+	}
+	.book1 img,.book2 img {
+		width: 200px ;
+		height: 280px ;
+		margin: auto ;
+		margin-top: 20px ;
+	}
+	.book1 h2,.book2 h2 {
+		margin-top: 0px ;
+		margin-bottom: 0px ;
+	}
+	.book1 ,.book2 {
+		flex-direction: column ;
+	}
+
+	/*****************************************************/
+	/*                    CONTACT                        */
+	/*****************************************************/
+	.contact {
+		height: auto ;
+		margin-top: 70px ;
+	}
+	.contact form #pseudo2 {
+		width: 250px ;
+		height: 30px ;
+		margin: auto ;
+	}
+	.contact form #mail {
+		width: 250px ;
+		height: 30px ;
+		margin: auto ;
+	}
+	.contact form #message {
+		width: 60% ;
+		min-height: 200px ;
+		margin: auto ;
+	}
+	.contact form #button3 {
+		margin: 20px auto ;
+	}
+
+	/*****************************************************/
+	/*                  CONNEXION                        */
+	/*****************************************************/
+
+	.connexion form #pseudo {
+		width: 90% ;
+	}
+	.connexion form #password {
+		width: 90% ;
+	}
+	.connexion form #button {
+		width: 90% ;
+	}
+
+	/*****************************************************/
+	/*                     FOOTER                        */
+	/*****************************************************/
+	footer {
+		position: relative ;
+		left: 0px ;
+		right: 0px ;
+		bottom: 0px ;
+	}
+	footer p {
+		font-size: 0.6em ;
+	}
+	.reseaux {
+		display: none ;
+	}
+	/*****************************************************/
+	/*                     POP-UP                        */
+	/*****************************************************/
+	#session {
+		position: fixed ;
+		width: 60% ;
+		top: 82px ;
+		right: 12px ;
+	}
+	.windowConnect {
+		position: relative ;
+		top: 70px ;
+	}
+	.windowConnect form {
+		display: flex ;
+		flex-direction: column ;
+		text-align: left ;
+	}
+	.windowConnect label {
+		line-height: 15px ;
+		margin: 10px ;
+	}
+	.windowConnect form #button {
+		margin-top: 10px ;
+		margin-bottom: 10px ;
+		margin-left: 0px ;
+	}
+	#menu .cross {
+		margin-top: 24px ;
+		border-bottom: 1px solid transparent ;
+	}
+
+	/*****************************************************/
+	/*                    DASHBORD                       */
+	/*****************************************************/
+
+	.dashboard {
+		margin-top: 70px ;
+		height: auto ;
+	}
+	.postInfo,.commentInfo {
+		flex-direction: column ;
+		height: auto ;
+	}
+	.postPublish,.postNotPublish,.newPost,.validateComment,.signalComment,.publishComment {
+		margin: auto ;
+		margin-top: 20px ;
+		display: flex ;
+		justify-content: space-between ;
+		width: 76% ;
+		padding: 2% ;
+	}
+	.count {
+		position: static ;
+		width: 40px ;
+		min-width: 40px ;
+		height: 40px ;
+		max-height: 40px ;
+		margin-right: 5px ;
+		font-size: 1em ;
+		line-height: 40px ;
+		margin-top: 5px ;
+	}
+	.testPost {
+		display: flex ;
+		flex-direction: column ; 
+	}
+	.thead {
+		display: none ;
+	}
+	.tbody {
+		flex-direction: column ;
+		width: 91% ;
+		height: auto ;
+		margin: auto ;
+		margin-bottom: 40px ;
+		border-bottom: none ;
+		background-color: rgba(240,240,240,0.5) ;
+		text-align: left ;
+	}
+	.tbody p {
+		 margin: 0px ;
+		 padding: 2% ;
+	}
+	.tbody .chapitre,.tbody .titre, .tbody .contenus, .tbody .date, .tbody .actions,.tbody .pseudo {
+		width: 96% ;
+		height: 30px;
+		border-bottom: 2px solid white ;
+		border-right: none ;
+	}
+	.tbody .titre {
+		padding: 2% ;
+	}
+	.tbody .contenus {
+		height: auto ;
+		padding: 2% ;
+	}
+	.tbody .contenus p {
+		padding: 0px ;
+	}
+	.tbody .actions {
+		height: 50px ;
+		padding: 2% ;
+	}
+	.validateComment, .postPublish, .mailRead {
+		background: linear-gradient(to top right,#4218B8, #00C0FF) ;
+		padding: 10px ;
+	}
+	.signalComment, .postNotPublish, .mailNoRead {
+		background: linear-gradient(to bottom right, #4218B8,#00FFA9) ;
+		padding: 10px ;
+	}
+	.publishComment, .newPost {
+		background: linear-gradient(to bottom left, #00FFA9, #00C0FF) ;
+		padding: 10px ;
+	}
+	.commentValidationTable,.signalCommentTable, .publishCommentTable {
+		margin-bottom: 0px ;
+	}
+	.signalCommentTable h2, .publishCommentTable h2 {
+		margin-bottom: 40px ;
+		margin-top: 0px ;
+	}
+	.commentValidationTable h2, .postPublishTable h2 {
+		margin-bottom: 40px ;
+		margin-top: 40px ;
+	}
+	.fa-circle.cercle2,.fas.fa-circle {
+		margin-top: 16px ;
+		margin-left: 15px ;
+	}
+	.fa-edit {
+		margin-right: 15px ;
+	}
+
+	/*****************************************************/
+	/*                    ADD POST                       */
+	/*****************************************************/
+
+	.dashboardEdit {
+		margin-top: 70px ;
+		background-color: rgba(255,255,255,1) ;
+	}
+	.edit form,.f1 {
+		width: 90% ;
+	}
+	.edit form #chapitre {
+		width: 20% ;
+		text-align: center ;
+	}
+	.edit form #title {
+		width: 255px ;
+	}
+	.edit form #author {
+		width: 255px ;
+	}
+	.edit form #button {
+		width: 255px ;
+	}
+}
+
+
+
+@media screen and (max-width: 350px) {
+
+	/*****************************************************/
+	/*                   HOME PAGE                       */
+	/*****************************************************/
+
+	.accrocheText h1 {
+		font-size: 0.8em ;
+	}
+	.home .accrocheText h2 {
+		font-size: 0.6em ;
+	}
+	.post {
+		width: 90% ;
+	}
+
+	.form #author {
+		width: 90% ;	
+	}
+	.form #comment {
+		width: 90% ;
+		margin: auto ;
+	}
+	.formComment .form #button {
+		width: 90% ;
+		margin: auto ;
+	}
+
+	/*****************************************************/
+	/*                    CONTACT                        */
+	/*****************************************************/
+	.contact form #pseudo {
+		width: 200px ;
+		height: 30px ;
+		margin: auto ;
+	}
+	.contact form #mail {
+		width: 200px ;
+		height: 30px ;
+		margin: auto ;
+	}
+	.contact form #message {
+		width: 80% ;
+		min-height: 200px ;
+		margin: auto ;
+	}
+
+
+}

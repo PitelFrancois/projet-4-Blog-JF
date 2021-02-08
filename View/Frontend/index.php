@@ -1,6 +1,10 @@
 <?php
 
-require_once 'Framework/Router.php' ;
+require_once '../../Autoloader.php' ;
+
+use Francois\Projet\Autoloader ;
+
+Autoloader::register();
 
 use \Francois\Projet\Framework\Router ;
 
