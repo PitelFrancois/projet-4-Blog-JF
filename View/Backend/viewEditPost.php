@@ -8,7 +8,7 @@
 				<label for="title">titre</label>
 				<input type="text" id="title" name="title" value="<?= $post['title'] ?>"/>
 				<label for="content">Contenu</label>
-				<textarea id="content" name="content"><?= $post['content'] ; ?></textarea>
+				<textarea id="textarea" name="content"><?= $post['content'] ; ?></textarea>
 				<label for="author">Auteur</label>
 				<input type="text" id="author" name="author" value="<?= $post['author'] ?>" />
 				<input id="button" type="submit" value="mettre à jour" />

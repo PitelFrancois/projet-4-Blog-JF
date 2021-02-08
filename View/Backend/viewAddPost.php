@@ -10,7 +10,7 @@
 				<label for="title">titre</label>
 				<input type="text" id="title" name="title" />
 				<label for="content">Contenu</label>
-				<textarea id="content" name="content"></textarea>
+				<textarea id="textarea" name="content"></textarea>
 				<label for="author">Auteur</label>
 				<input type="text" id="author" name="author" value="Jean Forteroche" />
 				<input id="button" type="submit" value="Enregistrer avant publication" />

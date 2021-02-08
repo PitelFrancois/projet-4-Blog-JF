@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="Public/CSS/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/0d1298be20.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/0kjpsklubif6q97uhvtdavbb4630ngeps4gc82f4o2q46iom/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
 </head>
 <body>
     <?php require_once 'header.php' ; ?>
